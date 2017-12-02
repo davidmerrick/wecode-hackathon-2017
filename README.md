@@ -4,7 +4,18 @@ Repo for Team Smileyface, WeCodeForGood Hackathon 2017
 
 # Getting started
 
-1. Install [NodeJS](https://nodejs.org/en/).
-2. Install Node modules by running `npm install`. 
-3. Run `firebase serve` to start the server.
-4. Open a browser to [http://localhost:5000](http://localhost:5000).
+## Prerequisites
+
+- Install [NodeJS](https://nodejs.org/en/).
+- Install Firebase Tools: `npm install -g firebase-tools`.
+
+### Initialize Firebase
+
+1. `firebase login`
+2. `firebase use --add`
+
+## Running Locally
+
+1. Install Node modules by running `npm install`. 
+2. Run `firebase serve` to start the server.
+3. Open a browser to [http://localhost:5000](http://localhost:5000).
