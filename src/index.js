@@ -19,10 +19,14 @@ var database = firebase.database();
 //     var resource = snapshot.val();
 // });
 
-var resourcesRef = firebase.database().ref('/v3/resource/resource').orderByChild('title');
-ref.once('value', function(snapshot) {
+// Order by tags
+// Note: Tags must be structured as booleans like:
+// tags: foo: true
+// https://stackoverflow.com/questions/40656589/firebase-query-if-child-of-child-contains-a-value
+var resourcesRef = database.ref('/v3/resource/resource').orderByChild("tags/foo").equalTo(true);
+resourcesRef.once('value', function(snapshot) {
     snapshot.forEach(function(childSnapshot) {
-        var childKey = childSnapshot.key;
-        var childData = childSnapshot.val();
+        console.log(childSnapshot.val());
     });
 });
+

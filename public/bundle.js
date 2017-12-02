@@ -11417,13 +11417,15 @@ var database = firebase.database();
 //     var resource = snapshot.val();
 // });
 
-var resourcesRef = firebase.database().ref('/v3/resource/resource').orderByChild('title');
-ref.once('value', function(snapshot) {
+// Order by date edited
+var resourcesRef = database.ref('/v3/resource/resource').orderByChild("tags/foo").equalTo(true).orderByChild("tags/bar").equalTo(false);
+resourcesRef.once('value', function(snapshot) {
     snapshot.forEach(function(childSnapshot) {
-        var childKey = childSnapshot.key;
-        var childData = childSnapshot.val();
+        console.log(childSnapshot.val());
     });
 });
+
+
 
 /***/ }),
 /* 58 */
