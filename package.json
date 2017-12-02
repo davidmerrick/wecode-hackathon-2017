@@ -1,0 +1,9 @@
+{
+  "name": "wecode-hackathon-2017",
+  "version": "1.0.0",
+  "description": "Project for WeCode Hackathon 2017",
+  "main": "index.js",
+  "repository": "git@github.com:davidmerrick/wecode-hackathon-2017.git",
+  "author": "TeamSmileyFace",
+  "license": "MIT"
+}
