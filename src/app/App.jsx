@@ -20,7 +20,10 @@ class App extends React.Component {
         let resourcesRef = firebase.database().ref('/v3/resource/resource');
         let resourceArray = [];
         resourcesRef.once('value', snapshot => {
-            snapshot.forEach(item => resourceArray.push(item.val()));
+            snapshot.forEach(item => {
+                resourceArray.push(item.val());
+                return false;
+            });
             this.setState({
                 resources: resourceArray
             });

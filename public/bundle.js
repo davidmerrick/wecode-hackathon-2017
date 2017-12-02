@@ -12137,7 +12137,8 @@ var App = function (_React$Component) {
             var resourceArray = [];
             resourcesRef.once('value', function (snapshot) {
                 snapshot.forEach(function (item) {
-                    return resourceArray.push(item.val());
+                    resourceArray.push(item.val());
+                    return false;
                 });
                 _this2.setState({
                     resources: resourceArray
