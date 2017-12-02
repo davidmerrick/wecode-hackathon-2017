@@ -1,9 +1,22 @@
 var path = require('path');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        app: './src/app/App.jsx',
+    },
     output: {
-        path: path.join(__dirname, '/public'),
+        path: __dirname + '/public/',
         filename: 'bundle.js'
+    },
+    module: {
+        loaders: [
+            {
+                test: /\.jsx?$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/
+            }
+        ]
     }
 };
+
+
