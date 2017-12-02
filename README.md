@@ -23,3 +23,8 @@ Repo for Team Smileyface, WeCodeForGood Hackathon 2017
 3. Bundle the js with `webpack`.
 4. Run `firebase serve` to start the server.
 5. Open a browser to [http://localhost:5000](http://localhost:5000).
+
+# Useful links
+
+- [Google Cloud Console](https://console.cloud.google.com/iam-admin/iam/project?project=hello-world-8a89f)
+- [Firebase Console](https://console.firebase.google.com/u/0/project/hello-world-8a89f/database/hello-world-8a89f/data)
