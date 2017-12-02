@@ -7,9 +7,10 @@
   "author": "TeamSmileyFace",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "firebase": "^4.7.0"
   },
-  "scripts": {
-    "start": "node server.js"
+  "devDependencies": {
+    "webpack": "^3.9.1"
   }
 }
