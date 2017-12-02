@@ -1,30 +1,27 @@
-Repo for Team Smileyface, WeCodeForGood Hackathon 2017
+# MyApp
 
-![](https://pbs.twimg.com/media/DQBA745VoAA_Co1.jpg)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
 
-# Getting started
+## Development server
 
-## Prerequisites
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-- Install [NodeJS](https://nodejs.org/en/).
-- Install Firebase Tools: `npm install -g firebase-tools`.
-- Install webpack: `npm install -g webpack`.
-- Install [git](https://git-scm.com/downloads).
+## Code scaffolding
 
-### Initialize Firebase
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-1. `firebase login`
-2. `firebase use --add`
+## Build
 
-## Running Locally
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-1. Clone the repo. Open up a terminal and run `git clone <link to repo>`.
-2. Install Node modules by running `npm install`. 
-3. Bundle the js with `webpack`.
-4. Run `firebase serve` to start the server.
-5. Open a browser to [http://localhost:5000](http://localhost:5000).
+## Running unit tests
 
-# Useful links
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-- [Google Cloud Console](https://console.cloud.google.com/iam-admin/iam/project?project=hello-world-8a89f)
-- [Firebase Console](https://console.firebase.google.com/u/0/project/hello-world-8a89f/database/hello-world-8a89f/data)
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
