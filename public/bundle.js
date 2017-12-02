@@ -11410,31 +11410,10 @@ var config = {
 };
 firebase.initializeApp(config);
 
-var submitButton = document.querySelector('#submit');
-var titleText = document.querySelector('#title');
-var bodyText = document.querySelector('#description');
+var collection = firebase.database().collection('v3/resource/resource')
+    .where(1, '==', 1);
 
-submitButton.addEventListener('click', function(event) {
-    console.log("button clicked");
-    event.preventDefault();
-    var title = titleText.value;
-    var body = bodyText.value;
-    var resourceRef = 'v3/resource/';
-    var resourceData = {
-        title: title,
-        description: body,
-        date_edited: firebase.database.ServerValue.TIMESTAMP,
-        slug_name: title.replace(/\s/g, '-')
-    };
-    var key = firebase.database().ref(resourceRef + 'resource').push().key;
-    var updates = {};
-    updates[resourceRef + 'resource/' + key] = resourceData;
-
-    return firebase.database().ref().update(updates).catch(function(error) {
-        console.log(error);
-        alert(error.message)
-    });
-});
+console.log(collection);
 
 /***/ }),
 /* 58 */
