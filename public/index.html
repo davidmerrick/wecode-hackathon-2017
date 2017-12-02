@@ -1,10 +1,116 @@
-<html>
-    <head>
-        <title>WeCode 2017 Hackathon Project</title>
-    </head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>New Avenues for Youth Resource</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <body>
-        <div id="app"></div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+	<body>
+		<div id="app"></div>
         <script src="bundle.js"></script>
-    </body>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <a class="navbar-brand" href="index.html"><img src="assets/img/nalogo-new.jpg"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="http://newavenues.org/">New Avenues for Youth</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">User Login</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="adminview.html">Admin</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+		<div class="wrapper">
+			<div class="container">
+			<table class="table table-hover">
+		  <thead>
+		    <tr>
+		      <th scope="col">#</th>
+		      <th scope="col">Resource Name</th>
+		      <th scope="col">URL</th>
+		      <th scope="col">Date</th>
+		      <th scope="col">Rating</th>
+		      <th scope="col">Comments</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr data-toggle="collapse" data-target="#accordion1" class="clickable">
+		      <th scope="row">1</th>
+		      <td>Resource 1</td>
+		      <td><a href="/">Website</a></td>
+		      <td>12-1-2017</td>
+		      <td><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i></a> / <a href="/"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></td>
+		      <td><a href="/">Comments(0)</a></td>
+		    </tr>
+		    <tr>
+	            <td colspan="42">
+	                <div id="accordion1" class="collapse">
+	                <p>Here is where a lovely description will go! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas, elit sit amet luctus consectetur, quam eros elementum lacus, at tincidunt velit elit dignissim mauris. Nam purus mauris, volutpat sit amet arcu ac, congue consectetur massa. Nunc pretium urna mauris, id laoreet ipsum sollicitudin eu. Quisque nibh ex, tempus in metus nec, blandit finibus ante. Donec pellentesque varius mi, sit amet scelerisque augue rutrum ut. Praesent egestas pulvinar elit ut porta. Aliquam tincidunt id libero in vestibulum. Nullam nec ligula et sapien euismod vehicula eu eget sapien. </p>
+	                <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="/">tag1</a>, <a href="/">tag2</a>, <a href="/">tag3</a></p>
+	            	</div>
+	            </td>
+        	</tr>
+		    <tr data-toggle="collapse" data-target="#accordion2" class="clickable">
+		      <th scope="row">2</th>
+		      <td>Resource 2</td>
+		      <td><a href="/">Website</a></td>
+		      <td>12-1-2017</td>
+		      <td><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i></a> / <a href="/"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></td>
+		      <td><a href="/">Comments(0)</a></td>
+		    </tr>
+		    <tr>
+	            <td colspan="42">
+	                <div id="accordion2" class="collapse">
+	                <p>Here is where a lovely description will go! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas, elit sit amet luctus consectetur, quam eros elementum lacus, at tincidunt velit elit dignissim mauris. Nam purus mauris, volutpat sit amet arcu ac, congue consectetur massa. Nunc pretium urna mauris, id laoreet ipsum sollicitudin eu. Quisque nibh ex, tempus in metus nec, blandit finibus ante. Donec pellentesque varius mi, sit amet scelerisque augue rutrum ut. Praesent egestas pulvinar elit ut porta. Aliquam tincidunt id libero in vestibulum. Nullam nec ligula et sapien euismod vehicula eu eget sapien. </p>
+	                <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="/">tag1</a>, <a href="/">tag2</a>, <a href="/">tag3</a></p>
+	            	</div>
+	            </td>
+        	</tr>
+		    <tr data-toggle="collapse" data-target="#accordion3" class="clickable">
+		      <th scope="row">3</th>
+		      <td>Resource 3</td>
+		      <td><a href="/">Website</a></td>
+		      <td>12-1-2017</td>
+		      <td><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i></a> / <a href="/"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></td>
+		      <td><a href="/">Comments(0)</a></td>
+		    </tr>
+		    <tr>
+	            <td colspan="42">
+	                <div id="accordion3" class="collapse">
+	                <p>Here is where a lovely description will go! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas, elit sit amet luctus consectetur, quam eros elementum lacus, at tincidunt velit elit dignissim mauris. Nam purus mauris, volutpat sit amet arcu ac, congue consectetur massa. Nunc pretium urna mauris, id laoreet ipsum sollicitudin eu. Quisque nibh ex, tempus in metus nec, blandit finibus ante. Donec pellentesque varius mi, sit amet scelerisque augue rutrum ut. Praesent egestas pulvinar elit ut porta. Aliquam tincidunt id libero in vestibulum. Nullam nec ligula et sapien euismod vehicula eu eget sapien. </p>
+	                <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="/">tag1</a>, <a href="/">tag2</a>, <a href="/">tag3</a></p>
+	            	</div>
+	            </td>
+        	</tr>
+		  </tbody>
+		</table>
+		</div>
+		
+		<!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	    <script src="https://use.fontawesome.com/c8b541fee7.js"></script>
+  </body>
 </html>

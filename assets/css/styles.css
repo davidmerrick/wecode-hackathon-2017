@@ -1,0 +1,58 @@
+.btn-outline-success {
+    color: #faaa17;
+    background-color: transparent;
+    background-image: none;
+    border-color: #faaa17;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #faaa17;
+    background-image: none;
+    border-color: white;
+}
+
+body {
+	background: #FFFFE0;
+}
+.container {
+	background-color: white;
+	height: 90vh;
+}
+
+.navbar-brand img {
+	height: 50%;
+	width: 50%;
+}
+
+a {
+	color: #faaa17;
+}
+
+a:hover {
+	color: #d18e12;
+}
+
+.fa.fa-thumbs-up:hover {
+	color: green;
+}
+
+.fa.fa-thumbs-down:hover {
+	color: red;
+}
+
+.fa.fa-pencil-square {
+	color: black;
+}
+
+.fa.fa-pencil-square:hover {
+	color: green;
+}
+
+.fa.fa-trash {
+	color: black;
+}
+
+.fa.fa-trash:hover {
+	color: red;
+}
