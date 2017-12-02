@@ -8,3 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 }
+
+var admin = require("firebase-admin");
+
+var serviceAccount = require("servicekey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://hello-world-8a89f.firebaseio.com"
+});
+
+
