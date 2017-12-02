@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+//import { NewResourceComponent } from './newResource.component';
+import { Resources } from './resources';
+import { FormsModule }   from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'newresource';
+  model = new Resources();
+  submitted = false;
+  onSubmit() { this.submitted = true; }
 }

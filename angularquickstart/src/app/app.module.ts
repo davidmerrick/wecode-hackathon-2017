@@ -1,9 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
+
+import { FormsModule }   from '@angular/forms';
+import { NewResourceComponent } from './newResource.component';
+
+
 import { ResourcesService } from './resources.service';
+
 
 
 @NgModule({
@@ -11,7 +15,8 @@ import { ResourcesService } from './resources.service';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [ResourcesService],
   bootstrap: [AppComponent]
