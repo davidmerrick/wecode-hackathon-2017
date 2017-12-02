@@ -11,6 +11,29 @@ var config = {
     messagingSenderId: "735912752935"
 };
 firebase.initializeApp(config);
-console.log("hello world");
 
+var submitButton = document.querySelector('#submit');
+var titleText = document.querySelector('#title');
+var bodyText = document.querySelector('#description');
 
+submitButton.addEventListener('click', function(event) {
+    console.log("button clicked");
+    event.preventDefault();
+    var title = titleText.value;
+    var body = bodyText.value;
+    var resourceRef = 'v3/resource/';
+    var resourceData = {
+        title: title,
+        description: body,
+        date_edited: firebase.database.ServerValue.TIMESTAMP,
+        slug_name: title.replace(/\s/g, '-')
+    };
+    var key = firebase.database().ref(resourceRef + 'resource').push().key;
+    var updates = {};
+    updates[resourceRef + 'resource/' + key] = resourceData;
+
+    return firebase.database().ref().update(updates).catch(function(error) {
+        console.log(error);
+        alert(error.message)
+    });
+});
